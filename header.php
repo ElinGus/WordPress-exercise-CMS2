@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
-    <meta charset=”UTF-8” />
-      <title><?php wp_title(); ?></title>
-      <link href=”<?php echo get_stylesheet_url(); ?>” rel=”stylesheet” type=”text/css” />
-      <?php wp_head(); ?>
-    </head>
-    <body <?php body_class(); ?>>
-<header></header>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><?php wp_title(); ?></title>
+    <?php wp_head(); ?>
+    
+    <?php
+      wp_nav_menu( array( 
+          'theme_location' => 'header-menu', 
+          'container_class' => 'header-menu-class' ) ); 
+    ?>
+
+  </head>
+  <body>
+  
