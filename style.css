@@ -5,10 +5,16 @@ Description: En övning
 Vesion: 1.0
 */ 
 
-/* body {
-  background: #41376C;
+body {
+  background-color: lightgray;
 }
 
 h1, p, a {
-  color: white;
-} */
+  color: black;
+}
+
+.rightcolumn {
+  background-color: lightblue;
+  width: 50%;
+	float: right;
+}
