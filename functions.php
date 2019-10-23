@@ -1,5 +1,5 @@
 <?php
-
+// Läsa in css-filen 
 function add_theme_scripts() {
   wp_enqueue_style( 'style', get_stylesheet_uri() );
 }
@@ -14,6 +14,10 @@ add_action( 'init', 'wpb_custom_new_menu' );
 
 add_theme_support( 'post-thumbnails' );
 
-register_post_type( $post_type, $args );
+// [citat]
+function citat_shortcode( $atts, $content = null ) {
+	return '<blockquote class="citat"><i>' . $content . '</i></blockquote>';
+}
+add_shortcode( 'citat', 'citat_shortcode' );
 
 ?>

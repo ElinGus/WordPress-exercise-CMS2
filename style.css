@@ -13,8 +13,12 @@ h1, p, a {
   color: black;
 }
 
-.rightcolumn {
-  background-color: lightblue;
+img {
+  width: 100%;
+}
+
+/* .rightcolumn {
+  background-color: red;
   width: 50%;
 	float: right;
-}
+} */
